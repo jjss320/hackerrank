@@ -12,7 +12,8 @@ public class ArrayManipulation {
 
     // Complete the arrayManipulation function below.
     static long arrayManipulation(int n, int[][] queries) {
-    	// ÇÏµåÄÚµù¿¹Á¦
+    	// í•˜ë“œì½”ë”©ì˜ˆì œ
+    	// ì¸ì½”ë”©í…ŒìŠ¤íŠ¸
         int[] platform = new int[n];
         int max = 0;
         
