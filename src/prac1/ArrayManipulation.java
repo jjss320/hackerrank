@@ -12,7 +12,7 @@ public class ArrayManipulation {
 
     // Complete the arrayManipulation function below.
     static long arrayManipulation(int n, int[][] queries) {
-    	
+    	// 하드코딩예제
         int[] platform = new int[n];
         int max = 0;
         
