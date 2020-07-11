@@ -11,12 +11,13 @@ public class GameOfTwoStacks {
      * Complete the twoStacks function below.
      */
 	static int twoStacks(int x, int[] a, int[] b) {
+		// 초기값정의
     	int sum = 0;
     	int count = 0;
         int ai = 0;
         int bi = 0;
         int max = 0;
-        
+        //스택A전부sum에저장(x같거나작을때까지)
     	while(sum <= x) {
     		sum += a[ai];
     		if(sum > x) {
@@ -31,7 +32,7 @@ public class GameOfTwoStacks {
         		break;
         	}
     	}
-    	
+    	//스택에모자른부분스택B내용저장
     	while(sum <= x) {
     		sum += b[bi];
     		if(sum > x) {
@@ -45,11 +46,11 @@ public class GameOfTwoStacks {
         		break;
         	}
     	}
-
+    	//중간max값
 		if(max <= count) {
 			max = count;
 		}
-    	
+    	//스택A후반부터제거해나가면서스택B내용추가
     	while(ai >= 0) {
     		sum -= a[ai];
     		count -= 1;
@@ -70,6 +71,7 @@ public class GameOfTwoStacks {
             	}
         	}
     		ai -= 1;
+    		//최종max
     		if(max <= count) {
     			max = count;
     		}
