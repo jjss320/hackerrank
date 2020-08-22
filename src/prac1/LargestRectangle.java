@@ -23,7 +23,7 @@ public class LargestRectangle {
     				width++;
     				if(j == h.length - 1) {
     					if(max <= width) {
-    						max = width;
+    						max = width; 
     					}
     					width = 0;
     				}

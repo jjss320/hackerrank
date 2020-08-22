@@ -12,6 +12,7 @@ public class SimpleTextEditor {
     	int count = scan.nextInt();
     	int Q = 0;
     	
+    	// count가 소멸될 때 까지 실행
     	while(count > 0) {
     		Q = scan.nextInt();
     		
@@ -42,7 +43,7 @@ public class SimpleTextEditor {
     			}
     			count--;
     		}
-    		
+    		// 스택에 이전값 꺼내와서 돌아가기
     		else if(Q == 4) {
     			if(stack.empty() == false) {
     				stack.pop();
@@ -58,6 +59,7 @@ public class SimpleTextEditor {
     			count--;
     		}
     		
+    		// 1부터 4이외에 값 입력 시
     		else {
     			
     		}
