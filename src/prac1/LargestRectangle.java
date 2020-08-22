@@ -31,7 +31,7 @@ public class LargestRectangle {
     				if(width >= max) {
     					max = width;
     				}
-    				width = 0;
+    				width = 0;  
     			}
     		}
     		stack.push(h[height] * max);
